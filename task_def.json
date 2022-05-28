@@ -1,5 +1,5 @@
 {
-  "executionRoleArn": "arn:aws:iam::046729567527:role/AWS_ECS_ROLE_FOR_MANAGING_OTHER_SERVICE"
+  "executionRoleArn": "arn:aws:iam::046729567527:role/AWS_ECS_ROLE_FOR_MANAGING_OTHER_SERVICE",
   "containerDefinitions": [
     {
       "dnsSearchDomains": [],

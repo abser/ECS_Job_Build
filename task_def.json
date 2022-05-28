@@ -1,0 +1,67 @@
+{
+  "executionRoleArn": "arn:aws:iam::046729567527:role/AWS_ECS_ROLE_FOR_MANAGING_OTHER_SERVICE"
+  "containerDefinitions": [
+    {
+      "dnsSearchDomains": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "test-app",
+          "awslogs-region": "ap-southeast-1",
+          "awslogs-stream-prefix": "web"
+        }
+      },
+      "entryPoint": [],
+      "portMappings": [
+        {
+          "hostPort": 3005,
+          "protocol": "tcp",
+          "containerPort": 3005
+        }
+      ],
+      "command": [],
+      "cpu": 0,
+      "environment": [
+        {
+          "name": "DB_DATABASE",
+          "value": "incomegl"
+        },
+        {
+          "name": "DB_DYNAMO_TABLE",
+          "value": "droplet-gl"
+        },
+       
+        {
+          "name": "NLB_URL",
+          "value": "http://droplet-production-324bb60463dfecd5.elb.ap-southeast-1.amazonaws.com"
+        },
+        {
+          "name": "NODE_ENV",
+          "value": "production"
+        },
+        {
+          "name": "PORT",
+          "value": "3005"
+        },
+      ],
+      "dnsServers": [],
+      "mountPoints": [],
+      "dockerSecurityOptions": [],
+      "volumesFrom": [],
+      "image": "{{DOCKER_IMAGE_URL}}",
+      "essential": true,
+      "links": [],
+      "name": "test-app"
+    }
+  ],
+  "placementConstraints": [],
+  "memory": "512",
+  "taskRoleArn": "arn:aws:iam::046729567527:role/AWS_ECS_ROLE_FOR_MANAGING_OTHER_SERVICE",
+  "family": "test-app",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "volumes": []
+}

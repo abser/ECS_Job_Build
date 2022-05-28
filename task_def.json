@@ -42,7 +42,7 @@
         {
           "name": "PORT",
           "value": "3005"
-        },
+        }
       ],
       "dnsServers": [],
       "mountPoints": [],

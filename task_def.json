@@ -62,12 +62,6 @@
     "FARGATE"
   ],
   "networkMode": "awsvpc",
-  "loadBalancers":[
-   {  
-      "targetGroupArn":"arn:aws:elasticloadbalancing:ap-southeast-1:046729567527:targetgroup/TG-Monarch/9908726744d90099",
-      "containerName":"test-app",
-      "containerPort":3000
-   }],
   "cpu": "256",
   "volumes": []
 }

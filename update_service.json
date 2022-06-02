@@ -1,26 +1,8 @@
 {
    "cluster": "%ECS_CLUSTER_NAME%",
-   "serviceName": "%SVC_NAME%",
+   "service": "%SVC_NAME%",
    "taskDefinition": "%TASK_NAME%",
-   "loadBalancers": [
-        {
-            "targetGroupArn": "%TARGET_GROUP_ARN%",
-            "containerName": "%CONTAINER_NAME%",
-            "containerPort": %CONTAINER_PORT%
-        }
-    ],
-    "tags": [
-        {
-            "key": "Project",
-            "value": "%PROJECT_NAME%"
-        },
-        {
-            "key": "Environment",
-            "value": "%ENVIRONMENT%"
-        }
-    ],
     "desiredCount": %DESIRED_COUNT%,
-    "launchType": "FARGATE",
     "platformVersion": "LATEST",
     "networkConfiguration": {
         "awsvpcConfiguration": {
@@ -33,8 +15,5 @@
             "assignPublicIp": "DISABLED"
         }
     },
-    "enableECSManagedTags": true,
-    "propagateTags": "SERVICE",
-    "healthCheckGracePeriodSeconds": 300,
-    "schedulingStrategy": "REPLICA"
+    "healthCheckGracePeriodSeconds": 300
 }

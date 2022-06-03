@@ -1,5 +1,5 @@
 {
-   "cluster": "TestingMonarcheECSCluster",
+   "cluster": "MonarchECSCluster",
    "serviceName": "test-app",
    "taskDefinition": "test-app",
    "loadBalancers": [

@@ -1,5 +1,5 @@
 {
-   "cluster": "TestingMonarcheECSCluster",
+   "cluster": "MonarchECSCluster",
    "service": "test-app",
    "taskDefinition": "test-app",
     "desiredCount": 1,

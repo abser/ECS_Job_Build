@@ -6,7 +6,7 @@
         {
             "targetGroupArn": "arn:aws:elasticloadbalancing:ap-southeast-1:046729567527:targetgroup/TG-TestApp/0eecb4c28c4daa5e",
             "containerName": "test-app",
-            "containerPort": 3005
+            "containerPort": 80
         }
     ],
     "tags": [

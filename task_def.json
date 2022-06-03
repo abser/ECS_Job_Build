@@ -14,9 +14,9 @@
       "entryPoint": [],
       "portMappings": [
         {
-          "hostPort": 3005,
+          "hostPort": 80,
           "protocol": "tcp",
-          "containerPort": 3005
+          "containerPort": 80
         }
       ],
       "command": [],
@@ -41,7 +41,7 @@
         },
         {
           "name": "PORT",
-          "value": "3000"
+          "value": "80"
         }
       ],
       "dnsServers": [],

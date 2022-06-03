@@ -1,34 +1,34 @@
 {
-   "cluster": "%ECS_CLUSTER_NAME%",
-   "serviceName": "%SVC_NAME%",
-   "taskDefinition": "%TASK_NAME%",
+   "cluster": "TestingMonarcheECSCluster",
+   "serviceName": "test-app",
+   "taskDefinition": "test-app",
    "loadBalancers": [
         {
-            "targetGroupArn": "%TARGET_GROUP_ARN%",
-            "containerName": "%CONTAINER_NAME%",
-            "containerPort": %CONTAINER_PORT%
+            "targetGroupArn": "arn:aws:elasticloadbalancing:ap-southeast-1:046729567527:targetgroup/TG-TestApp/0eecb4c28c4daa5e",
+            "containerName": "test-app",
+            "containerPort": 3005
         }
     ],
     "tags": [
         {
             "key": "Project",
-            "value": "%PROJECT_NAME%"
+            "value": "test"
         },
         {
             "key": "Environment",
-            "value": "%ENVIRONMENT%"
+            "value": "test"
         }
     ],
-    "desiredCount": %DESIRED_COUNT%,
+    "desiredCount": 1,
     "launchType": "FARGATE",
     "platformVersion": "LATEST",
     "networkConfiguration": {
         "awsvpcConfiguration": {
             "subnets": [
-                %SUBNET_ID%
+                "subnet-0ece65d7c57668c9c","subnet-06bb4ffb54d934d26"
             ],
             "securityGroups": [
-                "%SECURITY_GROUP_ID%"
+                "sg-04cb5425a1abffccd"
             ],
             "assignPublicIp": "DISABLED"
         }

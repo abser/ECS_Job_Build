@@ -33,7 +33,7 @@
        
         {
           "name": "NLB_URL",
-          "value": "http://droplet-production-324bb60463dfecd5.elb.ap-southeast-1.amazonaws.com"
+          "value": "https://NLB-MM-a8bdff4fa34d8c76.elb.ap-southeast-1.amazonaws.com"
         },
         {
           "name": "NODE_ENV",

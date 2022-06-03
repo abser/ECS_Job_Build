@@ -1,18 +1,18 @@
 {
-   "cluster": "%ECS_CLUSTER_NAME%",
-   "service": "%SVC_NAME%",
-   "taskDefinition": "%TASK_NAME%",
-    "desiredCount": %DESIRED_COUNT%,
+   "cluster": "TestingMonarcheECSCluster",
+   "service": "test-app",
+   "taskDefinition": "test-app",
+    "desiredCount": 1,
     "platformVersion": "LATEST",
     "networkConfiguration": {
         "awsvpcConfiguration": {
             "subnets": [
-                %SUBNET_ID%
+                "subnet-0ece65d7c57668c9c","subnet-06bb4ffb54d934d26"
             ],
             "securityGroups": [
-                "%SECURITY_GROUP_ID%"
+                "sg-04cb5425a1abffccd"
             ],
-            "assignPublicIp": "DISABLED"
+            "assignPublicIp": "ENABLED"
         }
     },
     "healthCheckGracePeriodSeconds": 300

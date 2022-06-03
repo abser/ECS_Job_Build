@@ -62,6 +62,13 @@
     "FARGATE"
   ],
   "networkMode": "awsvpc",
+  "network-configuration" : {
+    "awsvpcConfiguration": {
+      "subnets": ["subnet-0ece65d7c57668c9c","subnet-06bb4ffb54d934d26"],
+      "securityGroups": ["sg-04cb5425a1abffccd"],
+      "assignPublicIp": "ENABLED"
+  }
+},
   "cpu": "256",
   "volumes": []
 }

@@ -3,6 +3,8 @@ const app = express()
 const port = 80
 
 app.get('/', (req, res) => {
+  var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress 
+  console.log("/ called from ", ip)
   res.send('Hello World!')
 })
 

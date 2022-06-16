@@ -12,7 +12,7 @@
             "securityGroups": [
                 "sg-04cb5425a1abffccd"
             ],
-            "assignPublicIp": "DISABLED"
+            "assignPublicIp": "ENABLED"
         }
     },
     "healthCheckGracePeriodSeconds": 300

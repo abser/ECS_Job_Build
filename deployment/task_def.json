@@ -23,17 +23,17 @@
       "cpu": 0,
       "environment": [
         {
-          "name": "DB_DATABASE",
-          "value": "incomegl"
+          "name": "MYSQL_HOST",
+          "value": "mm-dev-test.cpatdgyzvylx.ap-southeast-1.rds.amazonaws.com"
         },
         {
-          "name": "DB_DYNAMO_TABLE",
-          "value": "droplet-gl"
+          "name": "MYSQL_DATABASE",
+          "value": "authn"
         },
        
         {
-          "name": "NLB_URL",
-          "value": "https://NLB-MM-a8bdff4fa34d8c76.elb.ap-southeast-1.amazonaws.com"
+          "name": "MYSQL_ROOT_USER",
+          "value": "mm_admin"
         },
         {
           "name": "NODE_ENV",

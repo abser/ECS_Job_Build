@@ -1,12 +1,12 @@
 {
-   "cluster": "MonarchECSCluster",
+   "cluster": "MonarchMartECSCluster",
    "serviceName": "test-app",
    "taskDefinition": "test-app",
    "loadBalancers": [
         {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:ap-southeast-1:046729567527:targetgroup/TG-TestApp/0eecb4c28c4daa5e",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:ap-south-1:046729567527:targetgroup/test-app/38a1408c5eb0edc1",
             "containerName": "test-app",
-            "containerPort": 80
+            "containerPort": 8080
         }
     ],
     "tags": [
@@ -25,10 +25,10 @@
     "networkConfiguration": {
         "awsvpcConfiguration": {
             "subnets": [
-                "subnet-0ece65d7c57668c9c","subnet-06bb4ffb54d934d26"
+                "subnet-06c9f1e366e35c516","subnet-065f3d05ec769d0ec"
             ],
             "securityGroups": [
-                "sg-04cb5425a1abffccd"
+                "sg-0b837996edf42747f"
             ],
             "assignPublicIp": "ENABLED"
         }

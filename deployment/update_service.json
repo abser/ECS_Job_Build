@@ -1,5 +1,5 @@
 {
-   "cluster": "MonarchECSCluster",
+   "cluster": "MonarchMartECSCluster",
    "service": "test-app",
    "taskDefinition": "test-app",
     "desiredCount": 1,
@@ -7,10 +7,10 @@
     "networkConfiguration": {
         "awsvpcConfiguration": {
             "subnets": [
-                "subnet-0ece65d7c57668c9c","subnet-06bb4ffb54d934d26"
+                "subnet-06c9f1e366e35c516","subnet-065f3d05ec769d0ec"
             ],
             "securityGroups": [
-                "sg-04cb5425a1abffccd"
+                "sg-0b837996edf42747f"
             ],
             "assignPublicIp": "ENABLED"
         }
